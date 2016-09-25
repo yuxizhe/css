@@ -21,8 +21,7 @@
     transition: all .1s ease-in-out 0s;
 }
 
-
-/*.nav:after {
+.nav:after {
     position: absolute;
     content: '';
     right: 0px;
@@ -33,12 +32,16 @@
     line-height: 50px;
     border-radius: 50%;
     transition: all .1s ease-in-out 0s;
-}*/
+    z-index: 2;
+}
 
 
 /*实现增加属性后 动画*/
 
-.nav.active {
+
+/*用after 实现的是 背景动的效果*/
+
+.nav.active:after {
     /*position: absolute;
     content: '';*/
     right: -150px;
@@ -49,4 +52,19 @@
     line-height: 50px;
     border-radius: 50%;
     z-index: 1;*/
+}
+
+.nav-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transition: all .3s cubic-bezier(.68, 1.55, .265, 1);
+    text-align: center;
+    z-index: 3
+}
+
+.nav.active .nav-count-1 {
+    /*transform: translate(10px, -50px);*/
 }
