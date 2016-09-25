@@ -60,11 +60,28 @@
     left: 0;
     width: 50px;
     height: 50px;
+    font-size: 30px;
     transition: all .3s cubic-bezier(.68, 1.55, .265, 1);
     text-align: center;
-    z-index: 3
+    z-index: 1;
+}
+
+.nav.active .nav-item {
+    z-index: 3;
 }
 
 .nav.active .nav-count-1 {
-    /*transform: translate(10px, -50px);*/
+    transform: translate(10px, -130px);
+}
+
+.nav.active .nav-count-2 {
+    transform: translate(-50px, -110px)
+}
+
+.nav.active .nav-count-3 {
+    transform: translate(-110px, -50px)
+}
+
+.nav.active .nav-count-4 {
+    transform: translate(-130px, 10px)
 }
