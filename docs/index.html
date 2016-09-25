@@ -26,6 +26,32 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <div class="mobile">
+        <div class="header">
+            <span class="sidebar-icon">
+                <i class="ion-navicon-round"></i>
+                <span>Home</span>
+            </span>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-overlay">
+            </div>
+            <div class="sidebar-content">
+                <h3>明其道不计其功</h1>
+
+                <div class="nav-left">
+                        <a href="#home">
+                        <span class="ion-ios-home-outline"></span> Home
+                        </a>
+                        <a href="#alarm"><span class="ion-ios-list-outline"></span>    Alarm</a>
+                        <a href="#compose"><span class="ion-ios-compose-outline"></span>    Compose</a>
+                        <a href="#chats"><span class="ion-ios-chatboxes-outline"></span>    Chats</a>
+                        <a href="#profile"><span class="ion-ios-person-outline"></span>    Profile</a>
+                        <a href="#settings"><span class="ion-ios-gear-outline"></span>    Settings</a>
+                        <a href="#credits"><span class="ion-ios-information-outline"></span> Credits</a>
+                    </div>
+
+            </div>
+        </div>
         <div class="nav">
             <a class="nav-item nav-count-1">
                 <i class="ion-ios-person-outline"></i>
@@ -48,6 +74,9 @@
     $('.nav').click(function() {
         $('.nav').toggleClass('active');
     });
+    $('.sidebar-icon').click(function () {
+        $('.sidebar').addClass('active');
+    })
     </script>
 </body>
 

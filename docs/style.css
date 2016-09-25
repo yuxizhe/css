@@ -11,6 +11,65 @@
     overflow: hidden;
 }
 
+.header {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 30px;
+    width: 80%;
+    height: 100px;
+    /*background-color: white;*/
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+}
+
+.sidebar {}
+
+.sidebar.active .sidebar-content,
+.sidebar.active .sidebar-overlay {
+    transform: translateX(0);
+}
+
+.sidebar-overlay {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out 0s;
+}
+
+.sidebar-content {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    z-index: 100;
+    font-size: 20px;
+    padding: 30px;
+    transform: translateX(-100%);
+    transition: all .3s ease-in-out 0s;
+}
+
+.nav-left {
+    position: absolute;
+    top: 150px;
+    line-height: 50px;
+}
+
+.nav-left a {
+    display: block;
+}
+
+.nav-left span {
+    font-size: 30px;
+    padding: 10px;
+}
+
 .nav {
     position: absolute;
     right: 20px;
