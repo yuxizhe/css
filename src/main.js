@@ -1,6 +1,8 @@
 import App from './App'
 import HomePage from './components/home.vue'
 import ChartPage from './components/ThirdPage.vue'
+import FoodPage from './components/food.vue'
+import CookDetailPage from './components/CookDetailPage.vue'
 
 Vue.config.debug = true;
 
@@ -12,6 +14,12 @@ router.map({
 
     'chats': {
         component: ChartPage
+    },
+    'food': {
+        component: FoodPage
+    },
+    '/food/:id': {
+        component: CookDetailPage
     }
 
 })

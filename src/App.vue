@@ -16,12 +16,12 @@
                 <h3>明其道不计其功</h1>
 
                 <div class="nav-left" @click="sidebar_show=0"> 
-                        <a href="#home"><span class="ion-ios-home-outline"></span> Home
+                        <a href="#home"><span class="ion-ios-home-outline"></span> 主页
                         </a>
-                        <a href="#alarm"><span class="ion-ios-list-outline"></span>    Alarm</a>
-                        <a href="#compose"><span class="ion-ios-compose-outline"></span>    Compose</a>
-                        <a href="#chats"><span class="ion-ios-chatboxes-outline"></span>    Chats</a>
-                        <a href="#profile"><span class="ion-ios-person-outline"></span>    Profile</a>
+                        <!-- <a href="#alarm"><span class="ion-ios-list-outline"></span>    Alarm</a> -->
+                        <!-- <a href="#compose"><span class="ion-ios-compose-outline"></span>    Compose</a> -->
+                        <a href="#chats"><span class="ion-ios-chatboxes-outline"></span>    聊天室</a>
+                        <a href="#food"><span class="ion-pizza"></span>    菜谱</a>
                         <a href="#settings"><span class="ion-ios-gear-outline"></span>    Settings</a>
                         <a href="#credits"><span class="ion-ios-information-outline"></span> Credits</a>
                     </div>
@@ -29,11 +29,11 @@
             </div>
         </div>
         <div class="nav" v-bind:class="{active:nav_show}">
-            <a class="nav-item nav-count-1">
-                <i class="ion-ios-person-outline"></i>
+            <a href="#home" class="nav-item nav-count-1">
+                <i class="ion-ios-home-outline"></i>
             </a>
-            <a class="nav-item nav-count-2">
-                <i class="ion-ios-compose-outline"></i>
+            <a href="#food" class="nav-item nav-count-2">
+                <i class="ion-pizza"></i>
             </a>
             <a href="#chats" class="nav-item nav-count-3">
                 <i class="ion-ios-chatboxes-outline"></i>
