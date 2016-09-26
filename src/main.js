@@ -3,6 +3,8 @@ import HomePage from './components/home.vue'
 import ChartPage from './components/ThirdPage.vue'
 import FoodPage from './components/food.vue'
 import CookDetailPage from './components/CookDetailPage.vue'
+import MoviePage from './components/Movie.vue'
+import SMZDMPage from './components/SMZDM.vue'
 
 Vue.config.debug = true;
 
@@ -20,6 +22,12 @@ router.map({
     },
     '/food/:id': {
         component: CookDetailPage
+    },
+    'movie': {
+        component: MoviePage
+    },
+    'SMZDM': {
+        component: SMZDMPage
     }
 
 })

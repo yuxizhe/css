@@ -22,8 +22,8 @@
                         <!-- <a href="#compose"><span class="ion-ios-compose-outline"></span>    Compose</a> -->
                         <a href="#chats"><span class="ion-ios-chatboxes-outline"></span>    聊天室</a>
                         <a href="#food"><span class="ion-pizza"></span>    菜谱</a>
-                        <a href="#settings"><span class="ion-ios-gear-outline"></span>    Settings</a>
-                        <a href="#credits"><span class="ion-ios-information-outline"></span> Credits</a>
+                        <a href="#movie"><span class="ion-ios-film-outline"></span>    电影</a>
+                        <a href="#SMZDM"><span class="ion-ios-cart-outline"></span> 值得买</a>
                     </div>
 
             </div>
@@ -38,8 +38,11 @@
             <a href="#chats" class="nav-item nav-count-3">
                 <i class="ion-ios-chatboxes-outline"></i>
             </a>
-            <a class="nav-item nav-count-4">
-                <i class="ion-ios-alarm-outline"></i>
+            <a href="#movie" class="nav-item nav-count-4">
+                <i class="ion-ios-film-outline"></i>
+            </a>
+            <a href="#SMZDM" class="nav-item nav-count-5">
+                <i class="ion-ios-cart-outline"></i>
             </a>
             <a @click="nav_show=!nav_show" class="musk">
                 <i class="ion-ios-plus-empty">
@@ -227,11 +230,15 @@ export default {
 }
 
 .nav.active .nav-count-2 {
-    transform: translate(-50px, -110px)
+    transform: translate(-42px, -117px)
+}
+
+.nav.active .nav-count-5{
+    transform: translate(-88px, -88px)
 }
 
 .nav.active .nav-count-3 {
-    transform: translate(-110px, -50px)
+    transform: translate(-117px, -42px);
 }
 
 .nav.active .nav-count-4 {

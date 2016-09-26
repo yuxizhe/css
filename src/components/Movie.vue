@@ -1,6 +1,6 @@
 <template>
     <div>
-        <table class="table table-hover">
+        <table class=" movie table table-hover">
             <thead>
             </thead>
             <tbody v-for="movie in movies">
@@ -52,4 +52,8 @@ export default {
 }
 </script>
 <style>
+.movie td {
+    word-wrap: break-word;
+    max-width: 300px;
+}
 </style>
