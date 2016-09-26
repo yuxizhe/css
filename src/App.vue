@@ -1,7 +1,7 @@
 <template>
     <div class="mobile">
-        <div class="header" @click="sidebar_show=1">
-            <span class="sidebar-icon">
+        <div class="header">
+            <span @click="sidebar_show=1" class="sidebar-icon">
                 <i class="ion-navicon-round"></i>
                 <span>Home</span>
             </span>
@@ -87,7 +87,7 @@ export default {
     /*background-color: white;*/
     font-size: 30px;
     color: #fff;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 
 .sidebar {}
