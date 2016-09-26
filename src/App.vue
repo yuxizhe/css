@@ -6,15 +6,17 @@
                 <span>Home</span>
             </span>
         </div>
+        <div class="routerview">
+            <router-view></router-view>
+        </div>
         <div class="sidebar" v-bind:class="{active:sidebar_show}">
             <div class="sidebar-overlay" @click="sidebar_show=0">
             </div>
             <div class="sidebar-content">
                 <h3>明其道不计其功</h1>
 
-                <div class="nav-left">
-                        <a href="#home">
-                        <span class="ion-ios-home-outline"></span> Home
+                <div class="nav-left" @click="sidebar_show=0"> 
+                        <a href="#home"><span class="ion-ios-home-outline"></span> Home
                         </a>
                         <a href="#alarm"><span class="ion-ios-list-outline"></span>    Alarm</a>
                         <a href="#compose"><span class="ion-ios-compose-outline"></span>    Compose</a>
@@ -33,7 +35,7 @@
             <a class="nav-item nav-count-2">
                 <i class="ion-ios-compose-outline"></i>
             </a>
-            <a class="nav-item nav-count-3">
+            <a href="#chats" class="nav-item nav-count-3">
                 <i class="ion-ios-chatboxes-outline"></i>
             </a>
             <a class="nav-item nav-count-4">
@@ -48,12 +50,10 @@
 
 </template>
 <script>
-import Hello from './components/Hello'
+
 
 export default {
-    components: {
-        Hello
-    },
+    
     data(){
       return{
         sidebar_show:false,
@@ -111,7 +111,8 @@ export default {
 }
 
 .sidebar-content {
-    position: absolute;
+    position: fixed;
+    top: 0px;
     width: 80%;
     height: 100%;
     background-color: white;
@@ -235,6 +236,15 @@ export default {
 
 .nav.active .nav-count-4 {
     transform: translate(-130px, 10px)
+}
+
+.routerview{
+  position: absolute;
+    top: 17%;
+    bottom: 13%;
+    margin-left: 8%;
+    margin-right: 8%;
+    overflow: auto;
 }
 
 </style>

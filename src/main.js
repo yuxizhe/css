@@ -1,4 +1,6 @@
 import App from './App'
+import HomePage from './components/home.vue'
+import ChartPage from './components/ThirdPage.vue'
 
 Vue.config.debug = true;
 
@@ -7,6 +9,10 @@ Vue.use(VueRouter)
 var router = new VueRouter({})
 
 router.map({
+
+    'chats': {
+        component: ChartPage
+    }
 
 })
 
