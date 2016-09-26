@@ -1,6 +1,6 @@
 <template>
     <div>
-        <table class="table table-hover">
+        <table class="table table-hover bounceInDown animated">
             <thead>
             </thead>
             <tbody v-for="movie in movies">
