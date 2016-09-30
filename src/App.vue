@@ -252,6 +252,7 @@ export default {
     margin-left: 8%;
     margin-right: 8%;
     overflow: auto;
+    width: 84%;
 }
 
 </style>
