@@ -90,6 +90,7 @@ export default {
         margin-left:-207px;
         position: absolute;;
         overflow: hidden;
+        box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
     }
     .sidebar-overlay {
     top: 50%;

@@ -1,40 +1,42 @@
 <template>
     <div class="weatherleft">
-        <div>{{weather.city}} </div>
-        <div>{{weather.today.date}}</div>
-        <div>{{weather.today.week}}</div>
+        <div class="city">{{weather.city}} </div>
+        <div class="week">{{weather.today.week}}</div>
+        <div class="date">{{weather.today.date}}</div>
     </div>
     <div class="weatherright">
-        <div>{{weather.today.type}}</div>
-        <div>{{weather.today.curTemp}}</div>
-        <div>{{weather.today.fengxiang}}</div>
-        <div>{{weather.today.fengli}}</div>
-        <div>{{weather.today.hightemp}}</div>
-        <div>{{weather.today.lowtemp}}</div>
+        <div class="type">{{weather.today.type}}</div>
+        <div class="curTemp">{{weather.today.curTemp}}</div>
+        <div class="feng">{{weather.today.fengxiang}}</div>
+        <div class="fengli">{{weather.today.fengli}}</div>
+        <div class="hightemp">--{{weather.today.hightemp}}</div>
+        <div class="lowtemp">{{weather.today.lowtemp}}</div>
     </div>
-    <div class="forecast">
-        <i>{{weather.forecast[0].date}}</i>
-        <i>{{weather.forecast[0].hightemp}}</i>
-        <i>{{weather.forecast[0].lowtemp}}</i>
-        <i>{{weather.forecast[0].type}}</i>
-    </div>
-    <div class="forecast">
-        <i>{{weather.forecast[1].date}}</i>
-        <i>{{weather.forecast[1].hightemp}}</i>
-        <i>{{weather.forecast[1].lowtemp}}</i>
-        <i>{{weather.forecast[1].type}}</i>
-    </div>
-    <div class="forecast">
-        <i>{{weather.forecast[2].date}}</i>
-        <i>{{weather.forecast[2].hightemp}}</i>
-        <i>{{weather.forecast[2].lowtemp}}</i>
-        <i>{{weather.forecast[2].type}}</i>
-    </div>
-    <div class="forecast">
-        <i>{{weather.forecast[3].date}}</i>
-        <i>{{weather.forecast[3].hightemp}}</i>
-        <i>{{weather.forecast[3].lowtemp}}</i>
-        <i>{{weather.forecast[3].type}}</i>
+    <div class="fore">
+        <div class="forecast">
+            <i class="date">{{weather.forecast[0].date}}</i>
+            <i>{{weather.forecast[0].hightemp}}</i>
+            <i>{{weather.forecast[0].lowtemp}}</i>
+            <i>{{weather.forecast[0].type}}</i>
+        </div>
+        <div class="forecast">
+            <i class="date">{{weather.forecast[1].date}}</i>
+            <i>{{weather.forecast[1].hightemp}}</i>
+            <i>{{weather.forecast[1].lowtemp}}</i>
+            <i>{{weather.forecast[1].type}}</i>
+        </div>
+        <div class="forecast">
+            <i class="date">{{weather.forecast[2].date}}</i>
+            <i>{{weather.forecast[2].hightemp}}</i>
+            <i>{{weather.forecast[2].lowtemp}}</i>
+            <i>{{weather.forecast[2].type}}</i>
+        </div>
+        <div class="forecast">
+            <i class="date">{{weather.forecast[3].date}}</i>
+            <i>{{weather.forecast[3].hightemp}}</i>
+            <i>{{weather.forecast[3].lowtemp}}</i>
+            <i>{{weather.forecast[3].type}}</i>
+        </div>
     </div>
 </template>
 <script type="text/javascript">
@@ -62,8 +64,81 @@ export default {
 </script>
 <style type="text/css">
 .weatherright {
-    right: 40px;
+    right: 10px;
     position: absolute;
     top: 0px;
+    color: white;
+    width: 100px;
+}
+
+.weatherright .type {
+    float: left;
+    font-size: 20px;
+}
+
+.weatherright .curTemp {
+    display: inline;
+    font-size: 20px;
+    float: right;
+}
+
+.weatherright .feng {
+    float: left;
+}
+
+.weatherright .fengli {
+    display: inline;
+    float: right;
+    /*right: 10px*/
+}
+
+.weatherright .hightemp {
+    float: right;
+    display: inline;
+}
+
+.weatherright .lowtemp {
+    float: right;
+    display: inline;
+}
+
+.weatherleft {
+    /*margin: 30px;*/
+    margin-left: 20px;
+    color: white;
+    width: 200px;
+}
+
+.weatherleft .city {
+    /*float: left;
+*/
+    font-size: 20px;
+}
+
+.weatherleft .week {
+    /*margin-left: 30px;
+    display: inline;
+    font-size: 20px;*/
+}
+
+.fore {
+    margin: 30px;
+    color: white;
+    text-align: center;
+    /*width: 100%*/
+}
+
+.forecast {
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.forecast i {
+    flex: 1;
+}
+
+.forecast .date {
+    flex: 2;
 }
 </style>
