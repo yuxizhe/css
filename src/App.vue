@@ -118,6 +118,12 @@ export default {
     /*z-index: 2;*/
 }
 
+.header .sidebar-icon:hover {
+    cursor: pointer;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
 .sidebar {}
 
 .sidebar.active .sidebar-content,
@@ -203,6 +209,9 @@ export default {
     transition: all .3s cubic-bezier(.68, 1.55, .265, 1);
     text-align: center;
     z-index: 4;
+}
+.musk:hover {
+    cursor: pointer;
 }
 
 .nav.active .musk {

@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div v-for="question in cook" class="col-lg-6 bounceInUp animated" @click="jump(question)">
+        <div v-for="question in cook" class="col-lg-12 bounceInUp animated" @click="jump(question)">
             <div class=" thumbnail ">
                 <img class="img2 " src="http://tnfs.tngou.net/image{{question.img}} ">
                 <div class="caption ">

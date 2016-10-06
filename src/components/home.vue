@@ -1,10 +1,10 @@
 <template>
-    <div class="weatherleft">
+    <div class="weatherleft slideInLeft animated">
         <div class="city">{{weather.city}} </div>
         <div class="week">{{weather.today.week}}</div>
         <div class="date">{{weather.today.date}}</div>
     </div>
-    <div class="weatherright">
+    <div class="weatherright slideInRight animated">
         <div class="type">{{weather.today.type}}</div>
         <div class="curTemp">{{weather.today.curTemp}}</div>
         <div class="feng">{{weather.today.fengxiang}}</div>
@@ -12,7 +12,7 @@
         <div class="hightemp">--{{weather.today.hightemp}}</div>
         <div class="lowtemp">{{weather.today.lowtemp}}</div>
     </div>
-    <div class="fore">
+    <div class="fore slideInRight animated">
         <div class="forecast">
             <i class="date">{{weather.forecast[0].date}}</i>
             <i>{{weather.forecast[0].hightemp}}</i>

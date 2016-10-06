@@ -169,6 +169,12 @@ export default {
     flex: 1
 }
 
+.userchoice div:hover {
+    cursor: pointer;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
 .users {
     margin-top: 50px;
     /*background-color: #a8bcf5;*/
@@ -179,6 +185,12 @@ export default {
 .people {
     margin: 20px;
     height: 60px
+}
+
+.people:hover {
+    cursor: pointer;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.1)
 }
 
 .people .img {
