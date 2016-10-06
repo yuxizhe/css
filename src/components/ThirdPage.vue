@@ -14,7 +14,7 @@
     </div>
     <form v-show="userActive" class="form-inline submit" role="form" v-on:submit.prevent="addUser">
         <input class="form-control animated tada" width="10%" v-model="newUser.name">
-        <input class="form-control" placeholder="请输入内容" v-model="newUser.message">
+        <input class="form-control message" placeholder="请输入内容" v-model="newUser.message">
         <input class="btn btn-primary" type="submit" value="发送">
     </form>
     <div v-show="userActive" id="page3-content" class='bounceInDown animated'>
@@ -149,8 +149,17 @@ export default {
 
 .form-inline.submit {
     position: fixed;
-    bottom: 3%;
-    width: 70%;
+    bottom: 25px;
+    width: 260px;
+    display: flex;
+}
+
+.form-inline.submit input {
+    flex: 1;
+}
+
+.form-inline.submit .message {
+    flex: 2;
 }
 
 .userchoice {

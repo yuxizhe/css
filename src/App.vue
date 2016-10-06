@@ -60,7 +60,9 @@ export default {
     data(){
       return{
         sidebar_show:false,
-        nav_show:false
+        nav_show:false,
+        chats_show:false,
+        input_show:false
       }
     }
    
@@ -281,8 +283,8 @@ export default {
 
 .routerview{
   position: absolute;
-    top: 17%;
-    bottom: 13%;
+    top: 120px;
+    bottom: 90px;
     margin-left: 8%;
     margin-right: 8%;
     overflow: auto;
