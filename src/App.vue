@@ -13,7 +13,7 @@
             <div class="sidebar-overlay" @click="sidebar_show=0">
             </div>
             <div class="sidebar-content">
-                <h3>明其道不计其功</h1>
+                <h3>C哲的工具页</h1>
 
                 <div class="nav-left" @click="sidebar_show=0"> 
                         <a href="#home"><span class="ion-ios-home-outline"></span> 主页
