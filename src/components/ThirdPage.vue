@@ -158,7 +158,7 @@ export default {
     top: 90px;
     /*background-color: red;*/
     height: 40px;
-    width: 80%;
+    width: 300px;
     display: flex;
     color: white;
     text-align: center;
@@ -172,8 +172,8 @@ export default {
 .users {
     margin-top: 50px;
     background-color: #a8bcf5;
-    height: 100%;
-    width: 350px;
+    /*height: 100%;*/
+    /*width: 350px;*/
 }
 
 .people {
@@ -195,6 +195,7 @@ export default {
     left: 80px;
     top: -50px;
     font-size: 20px;
+    width: 200px;
 }
 
 .people .title {
@@ -202,11 +203,12 @@ export default {
     left: 80px;
     top: -50px;
     font-size: 15px;
+    width: 200px;
 }
 
 .people .online {
     position: relative;
-    left: 280px;
+    left: 250px;
     top: -85px;
     height: 20px;
     width: 20px;
@@ -229,11 +231,29 @@ img {
     height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .form-inline .form-control {
         display: inline-block;
         width: auto;
         vertical-align: middle;
+    }
+    .form-inline.submit {
+        position: fixed;
+        bottom: 50%;
+        margin-bottom: -350px;
+        width: 300px;
+    }
+    .userchoice {
+        position: fixed;
+        top: 50%;
+        margin-top: -275px;
+        /*background-color: red;*/
+        height: 40px;
+        width: 300px;
+        display: flex;
+        color: white;
+        text-align: center;
+        font-size: 20px
     }
 }
 </style>

@@ -80,6 +80,30 @@ export default {
     /*解决内容撑大的问题*/
     overflow: hidden;
 }
+@media (min-width: 736px){
+    .mobile{
+        height: 736px;
+        width: 414px;
+        left: 50%;
+        top: 50%;
+        margin-top: -368px;
+        margin-left:-207px;
+        position: absolute;;
+        overflow: hidden;
+    }
+    .sidebar-overlay {
+    top: 50%;
+    /*bottom: 0px;*/
+    left: 50%;
+    /*right: 0px;*/
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out 0s;
+    }
+}
 
 .header {
     position: absolute;
@@ -114,7 +138,7 @@ export default {
 }
 
 .sidebar-content {
-    position: fixed;
+    position: absolute;
     top: 0px;
     width: 80%;
     height: 100%;
@@ -252,6 +276,7 @@ export default {
     margin-left: 8%;
     margin-right: 8%;
     overflow: auto;
+    overflow-x: hidden;
     width: 84%;
 }
 
