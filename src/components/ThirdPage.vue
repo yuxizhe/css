@@ -171,7 +171,7 @@ export default {
 
 .users {
     margin-top: 50px;
-    background-color: #a8bcf5;
+    /*background-color: #a8bcf5;*/
     /*height: 100%;*/
     /*width: 350px;*/
 }

@@ -9,7 +9,7 @@
         <div class="routerview">
             <router-view></router-view>
         </div>
-        <div class="sidebar" v-bind:class="{active:sidebar_show}">
+        <div class="sidebar " v-bind:class="{active:sidebar_show}">
             <div class="sidebar-overlay" @click="sidebar_show=0">
             </div>
             <div class="sidebar-content">
@@ -75,7 +75,7 @@ export default {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    background-color: #a8bcf5;
+    background: url(http://www.bz55.com/uploads/allimg/151030/139-151030111Q4.jpg) center no-repeat;
     position: absolute;
     /*解决内容撑大的问题*/
     overflow: hidden;
