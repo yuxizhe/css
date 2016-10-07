@@ -252,17 +252,19 @@ img {
     height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 736px) {
     .form-inline .form-control {
-        display: inline-block;
-        width: auto;
-        vertical-align: middle;
+        /*display: inline-block;*/
+        /*改成width: 0  可以取消掉 bootstrap中的width属性*/
+        width: 0;
+        /*vertical-align: middle;*/
     }
     .form-inline.submit {
         position: fixed;
         bottom: 50%;
-        margin-bottom: -350px;
+        margin-bottom: -340px;
         width: 300px;
+        display: flex;
     }
     .userchoice {
         position: fixed;
