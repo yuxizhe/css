@@ -73,6 +73,7 @@ export default {
 
 .weatherright .type {
     float: left;
+    width: 55px;
     font-size: 20px;
 }
 
