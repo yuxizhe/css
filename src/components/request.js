@@ -4,7 +4,7 @@
 
 
 // firebase 0    wilddog 1
-var env = 1;
+var env = 0;
 
 if (env) {
 
